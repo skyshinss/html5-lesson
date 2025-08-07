@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 관련 태그</title>
+</head>
+<body>
+    <h1>테이블 관련 테그</h1>
+    <h2> 3 x 4 테이블 (성적처리 결과 테이블)</h2>
+    <table border="1" width="55%" cellspacing="0">
+        <tr height="35"><th>이름</th><th>국어</th><th>영어</th><th>수학</th></tr>
+        <tr height="35" align="center"><td>안유진</td><td>99</td><td>88</td><td>77</td></tr>
+        <tr height="35" align="center"><td>장원영</td><td>89</td><td>90</td><td>85</td></tr>
+        <tr height="35" align="center"><td>리즈</td><td>96</td><td>92</td><td>91</td></tr>
+    </table>
+    
+    <!--표의 구조를 지정하는 태그-->
+     <h2>테이블을 체계적으로 관리</h1>
+    <table border="1" width="55%" cellspacing="0">
+        <thead>
+            <tr height="35"><th>이름</th><th>국어</th><th>영어</th><th>수학</th></tr>
+        </thead>
+        <tbody>
+            <tr height="35" align="center"><td>안유진</td><td>99</td><td>88</td><td>77</td></tr>
+            <tr height="35" align="center"><td>장원영</td><td>89</td><td>90</td><td>85</td></tr>
+            <tr height="35" align="center"><td>리즈</td><td>96</td><td>92</td><td>91</td></tr>
+        </tbody>
+        <tfoot>
+            <tr height="35" align="center"><td>집계</td><td>284</td><td>270</td><td>253</td></tr>
+        </tfoot>              
+    </table>
+
+    <!--행과 열합치는 태그-->
+    <h2>행과 열 합치기-colspan, rowspan</h2>
+    <table border="1" width="800" cellspacing="0">
+        <caption><b>요안도라 객실</b></caption>
+        <tr bgcolor="silver"><th width="200">방 이름</th><th width="200">대상</th><th width="200">크기</th><th width="200">가격</th></tr>
+        <tr align="center"><td>유채방</td><td>여성 도미토리</td><td rowspan="3">4인실</td><td rowspan="4">1인 20000원</td></tr>
+        <tr align="center"><td rowspan="2">동백방</td><td>동성 도미토리</td></tr>
+        <tr align="center"><td>가족 1팀</td></tr>
+        <tr align="center"><td>천혜향방</td><td>-</td><td>2인실</td></tr>
+        <tr bgcolor="silver"><th colspan="4">바끝에 전체를 렌트합니다.</td></tr>
+    </table>
+
+    <!--열을 묶어주는 태그-->
+    <h2>개별 열 디자인하기-col, colgroup</h2>
+    <table border="1" width="800" cellspacing="0">
+        <caption><b>요안도라 객실</b></caption>
+        <colgroup>
+            <col style="width: 200px">
+            <col style="width: 200px">
+            <col style="width: 200px">
+            <col>
+        </colgroup>
+        <tr bgcolor="silver"><th>방 이름</th><th>대상</th><th>크기</th><th>가격</th></tr>
+        <tr align="center"><td>유채방</td><td>여성 도미토리</td><td rowspan="3">4인실</td><td rowspan="4">1인 20000원</td></tr>
+        <tr align="center"><td rowspan="2">동백방</td><td>동성 도미토리</td></tr>
+        <tr align="center"><td>가족 1팀</td></tr>
+        <tr align="center"><td>천혜향방</td><td>-</td><td>2인실</td></tr>
+        <tr bgcolor="silver"><th colspan="4">바끝에 전체를 렌트합니다.</td></tr>
+    </table>
+
+</body>
+</html>
